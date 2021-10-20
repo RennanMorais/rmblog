@@ -8,11 +8,11 @@
 		<version>2.5.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>br.com.rmpicture</groupId>
-	<artifactId>rmpicture</artifactId>
+	<groupId>br.com.rmblog</groupId>
+	<artifactId>rmblog</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>rmpicture</name>
-	<description>Sistema web de armazenamento de fotos</description>
+	<name>rmblog</name>
+	<description>Projeto de desenvolvimento de um blog utlizando Spring + Thymeleaft para estudos</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
@@ -23,11 +23,11 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>org.springframework.session</groupId>
-			<artifactId>spring-session-core</artifactId>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
 		<dependency>
@@ -50,10 +50,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-thymeleaf</artifactId>
 		</dependency>
 	</dependencies>
 
