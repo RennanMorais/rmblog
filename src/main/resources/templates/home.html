@@ -1,1 +1,54 @@
 <th:block th:include="partials/header"></th:block>
+<th:block th:include="partials/slides"></th:block>
+
+<section class="container">
+
+    <div class="content-title">
+        <h6>ÚLTIMAS PUBLICAÇÔES</h6>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-8">
+            <div class="card mb-3 news" style="max-width: 540px;" th:each="post : ${posts}">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img th:src="${post.urlImage}" class="img-thumbnail" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title" th:text="${post.title}"></h5>
+                            <p class="card-text" th:text="${post.corpo}"></p>
+                            <p class="card-text"><small class="text-muted">Publicado em <span th:text="${post.date}"></span></small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <aside class="col-sm-4">
+
+            <div class="content-title">
+                <h6>DESTAQUES QUE VOCÊ PODE GOSTAR</h6>
+            </div>
+
+            <div class="card bg-dark text-white mb-3 news">
+                <img src="http://localhost:8080/assets/media/images/gta.jpg" class="card-img" alt="...">
+                <div class="card-img-overlay">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text">Last updated 3 mins ago</p>
+                </div>
+            </div>
+
+            <div class="card bg-dark text-white mb-3 news">
+                <img src="http://localhost:8080/assets/media/images/gta.jpg" class="card-img" alt="...">
+                <div class="card-img-overlay">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text">Last updated 3 mins ago</p>
+                </div>
+            </div>
+        </aside>
+    </div>
+</section>
+
+<th:block th:include="partials/footer"></th:block>

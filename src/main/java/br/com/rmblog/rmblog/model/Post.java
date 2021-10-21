@@ -16,11 +16,12 @@ import lombok.Data;
 public class Post {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     
     private String title;
     private LocalDate Date;
+    private String urlImage;
 
     @Lob
     private String corpo;

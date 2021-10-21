@@ -1,7 +1,7 @@
 .topbar {
     width: 100%;
     height: 60px;
-    padding-top: 20px;
+    padding-top: 25px;
 }
 
 .logo h3 {
@@ -10,6 +10,52 @@
 
 .topbar-menu {
     width: 100%;
-    height: 50px;
+    height: 60px;
     background-color: #263238;
+    border-top: solid 2px #BF0A0A;
+    border-bottom: solid 2px #BF0A0A;
+}
+
+.menu ul {
+    list-style: none;
+    line-height: 56px;
+    padding: 0px;
+}
+
+.menu ul li {
+    display: inline-block;
+    padding: 0px 20px 0px 20px;
+    color: #FCFCFC;
+}
+
+.menu ul li:hover {
+    background-color: #777777;
+    transition: .3s;
+}
+
+.news:hover {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    transition: .4s;
+}
+
+.news-text {
+    background-color: #263238;
+    opacity: .8;
+    padding: 20px;
+}
+
+.news-card img {
+    height: 100%;
+    max-height: 179px;
+}
+
+.content-title {
+    border-left: 5px solid #BF0A0A;
+    padding-left: 5px;
+}
+
+footer {
+    background-color: #263238;
+    color: #FCFCFC;
+    padding: 20px;
 }
