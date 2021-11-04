@@ -20,11 +20,10 @@ public class Post {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String title;
-    
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy")
+    private String descricao;
     private LocalDate Date;
     private String urlImage;
-    
+
     @Lob
     private String corpo;
     

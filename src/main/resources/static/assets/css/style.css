@@ -72,3 +72,9 @@ footer {
 }
 
 /* Estilos da página NEWS/{item} */
+
+.post-content {
+    margin-top:-100px;
+    background-color:#FFFFFF;
+    padding:20px;
+}

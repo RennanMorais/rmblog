@@ -1,7 +1,13 @@
 <th:block th:include="partials/header"></th:block>
 
-<div class="bg-image">
-    
-</div>
+<div th:style="'background:url(' + ${post.urlImage} + ');height: 600px; background-size:cover;'"></div>
+
+<section class="container">
+    <div class="post-content">
+        <h3><span th:text="${post.title}"></span></h3>
+        <h5><span th:text="${post.descricao}"></span></h5>
+        <p><span th:text="${post.corpo}"></span></p>
+    </div>
+</section>
 
 <th:block th:include="partials/footer"></th:block>
