@@ -9,11 +9,13 @@ import javax.persistence.Lob;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
 
 @Entity
 @Table(name = "posts")
 @Data
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Post {
 
     @Id

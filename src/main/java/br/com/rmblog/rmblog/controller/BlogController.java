@@ -1,8 +1,6 @@
 package br.com.rmblog.rmblog.controller;
 
 import java.util.List;
-
-import javax.websocket.server.PathParam;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -33,14 +31,14 @@ public class BlogController {
 
     @GetMapping("news/{id}")
     @ResponseBody
-    public Post news(@PathVariable("id") Long id) {
+    public ModelAndView news(@PathVariable("id") Long id) {
         ModelAndView mv = new ModelAndView();
         mv.setViewName("news");
 
         Post post = postRepository.getById(id);
         mv.addObject("post", post);
 
-        return post;
+        return mv;
     }
 
 }
